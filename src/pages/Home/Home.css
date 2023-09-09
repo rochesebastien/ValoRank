@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton');
+
 :root {
     --valored_color: #FF4655
 }
@@ -7,29 +9,56 @@
     width: 100%;
     height: 100vh;
     background: #FF4655;
+    background: url('/giphy.gif');
+    background-size: cover;
 }
 
 .homepage_ctn {
     width: 100%;
     height: 100%;
-    background: blue;
+    /* background: blue; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .homepage_col{
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
     height: 80%;
-    background-color: red;
+    background-color:rgba(16 18 27 / 40%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 15px;
+    border: 0.1px solid var(--valored_color);
 }
 
 .homepage_col > .homepage_logo {
     width: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .homepage_logo img{
-    width: 50%;
+    width: 100%;
 }
 
-.homepage_btns {}
+.homepage_btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.homepage_btns a{
+    background-color: var(--valored_color);
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+    padding: 14px 2rem;
+    border: 2px solid #FFF;
+    color: #FFF;
+    margin: 0.75rem auto;
+    text-decoration: none;
+}

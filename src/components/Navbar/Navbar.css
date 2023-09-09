@@ -1,0 +1,9 @@
+nav {
+    position: fixed;
+    left: 10px;
+    width: 20%;
+  }
+  nav a img {
+    animation: appear 0.8s ease-in-out;
+    width: 70%;
+  }

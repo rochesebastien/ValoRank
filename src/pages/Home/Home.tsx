@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import './Home.css'
 
 function Home() {
@@ -11,11 +12,11 @@ function Home() {
                                 <img src="/nav_icon.png" alt="Valorank" />
                             </div>
                             <div className="homepage_btns">
-                                <a href="">Search a player</a>
-                                <a href="">Votre historique</a>
-                                <a href="">Votre compte</a>
-                                <a href="">A propos</a>
-                                <a href="">Se déconnecter</a>
+                                <Link to="/search">Rechercher un joueur</Link>
+                                <Link to="/history">Votre historique</Link>
+                                <Link to="/search">A propos</Link>
+                                {/* <a href="">Votre compte</a> */}
+                                {/* <a href="">Se déconnecter</a> */}
                             </div>
                         </div>
                     </div>
